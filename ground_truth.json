@@ -2,6 +2,7 @@
   "repository": "Weather Dashboard (Glassmorphism)",
   "bugs": [
     {
+      "comment": "Bug #1 - position",
       "bug_category": "Layers",
       "bug_type": "position",
       "file_modified": "src/App.jsx",
@@ -10,13 +11,14 @@
       "buggy_code": "          <h1 className=\"text-5xl md:text-6xl font-bold text-white tracking-tight mb-2 absolute -top-20 -left-32\">Weather</h1>",
       "css_selector": ".h1",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
-      }
+    "x": -96,
+    "y": -48,
+    "width": 229,
+    "height": 60
+  }
     },
     {
+      "comment": "Bug #2 - z-index",
       "bug_category": "Layers",
       "bug_type": "z-index",
       "file_modified": "src/App.jsx",
@@ -25,13 +27,14 @@
       "buggy_code": "        <div className=\"mb-8 bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 md:p-12 text-white shadow-2xl -z-10\">",
       "css_selector": ".main-card",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
-      }
+    "x": 32,
+    "y": 92,
+    "width": 1216,
+    "height": 1179
+  }
     },
     {
+      "comment": "Bug #3 - grid-cols",
       "bug_category": "Layout",
       "bug_type": "grid-cols",
       "file_modified": "src/App.jsx",
@@ -40,13 +43,14 @@
       "buggy_code": "          <div className=\"grid grid-cols-1 max-w-xs gap-8\">",
       "css_selector": ".main-temp-grid",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
-      }
+    "x": 81,
+    "y": 257,
+    "width": 320,
+    "height": 966
+  }
     },
     {
+      "comment": "Bug #4 - grid-cols",
       "bug_category": "Layout",
       "bug_type": "grid-cols",
       "file_modified": "src/App.jsx",
@@ -55,13 +59,14 @@
       "buggy_code": "            <div className=\"grid grid-cols-1 max-w-32 gap-4\">",
       "css_selector": ".stats-grid",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
-      }
+    "x": 81,
+    "y": 509,
+    "width": 128,
+    "height": 714
+  }
     },
     {
+      "comment": "Bug #5 - grid-cols (typo)",
       "bug_category": "Typo",
       "bug_type": "grid-cols",
       "file_modified": "src/App.jsx",
@@ -70,13 +75,14 @@
       "buggy_code": "          <div className=\"grid grid-col-2 flex-col md:grid-cols-4 gap-3 overflow-hidden\">",
       "css_selector": ".location-tabs",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
-      }
+    "x": 32,
+    "y": 1347,
+    "width": 1216,
+    "height": 110
+  }
     },
     {
+      "comment": "Bug #6 - font-size (typo)",
       "bug_category": "Typo",
       "bug_type": "font-size",
       "file_modified": "src/App.jsx",
@@ -85,13 +91,14 @@
       "buggy_code": "          <h3 className=\"text-white text-lgg text-xs font-semibold mb-4\">5-Day Forecast</h3>",
       "css_selector": ".forecast-title",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
-      }
+    "x": 32,
+    "y": 1489,
+    "width": 1216,
+    "height": 16
+  }
     },
     {
+      "comment": "Bug #7 - margin",
       "bug_category": "Spacing",
       "bug_type": "margin",
       "file_modified": "src/App.jsx",
@@ -100,13 +107,14 @@
       "buggy_code": "                <p className=\"font-semibold mb-2 -mx-32 text-yellow-300 font-black\">► {item.day}</p>",
       "css_selector": ".forecast-day",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
-      }
+    "x": -79,
+    "y": 1538,
+    "width": 456,
+    "height": 24
+  }
     },
     {
+      "comment": "Bug #8 - background",
       "bug_category": "Color",
       "bug_type": "background",
       "file_modified": "src/App.jsx",
@@ -115,13 +123,14 @@
       "buggy_code": "          <h3 className=\"text-white text-lg font-semibold p-0 m-0 bg-red-500/50\">Hourly Forecast</h3>",
       "css_selector": ".hourly-title",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
-      }
+    "x": 32,
+    "y": 1726,
+    "width": 1216,
+    "height": 28
+  }
     },
     {
+      "comment": "Bug #9 - text-opacity",
       "bug_category": "Color",
       "bug_type": "text-opacity",
       "file_modified": "src/App.jsx",
@@ -130,13 +139,14 @@
       "buggy_code": "            <div className=\"flex gap-3 pb-2 text-opacity-0 bg-gray-900\">",
       "css_selector": ".hourly-container",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
-      }
+    "x": 32,
+    "y": 1754,
+    "width": 1216,
+    "height": 138
+  }
     },
     {
+      "comment": "Bug #10 - color",
       "bug_category": "Color",
       "bug_type": "color",
       "file_modified": "src/App.jsx",
@@ -145,11 +155,11 @@
       "buggy_code": "        <div className=\"mt-12 text-center text-white text-sm bg-white/90 p-4\">",
       "css_selector": ".footer",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
-      }
+    "x": 32,
+    "y": 1521,
+    "width": 234,
+    "height": 174
+  }
     }
   ]
 }
