@@ -1,5 +1,8 @@
 {
   "repository": "Weather Dashboard (Glassmorphism)",
+  "playwright_config": {
+    "viewport_height": 2200
+  },
   "bugs": [
     {
       "comment": "Bug #1 - position",
@@ -9,12 +12,12 @@
       "line_number": 89,
       "clean_code": "          <h1 className=\"text-5xl md:text-6xl font-bold text-white tracking-tight mb-2\">Weather</h1>",
       "buggy_code": "          <h1 className=\"text-5xl md:text-6xl font-bold text-white tracking-tight mb-2 absolute -top-20 -left-32\">Weather</h1>",
-      "css_selector": ".h1",
+      "css_selector": "h1:has-text(\"Weather\")",
       "bounding_box": {
-    "x": -96,
-    "y": -48,
-    "width": 229,
-    "height": 60
+    "x": 0,
+    "y": 0,
+    "width": 400,
+    "height": 200
   }
     },
     {
@@ -25,7 +28,7 @@
       "line_number": 92,
       "clean_code": "        <div className=\"mb-8 bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 md:p-12 text-white shadow-2xl\">",
       "buggy_code": "        <div className=\"mb-8 bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 md:p-12 text-white shadow-2xl -z-10\">",
-      "css_selector": ".main-card",
+      "css_selector": ".mb-8.backdrop-blur-xl.rounded-3xl",
       "bounding_box": {
     "x": 32,
     "y": 92,
@@ -41,7 +44,7 @@
       "line_number": 105,
       "clean_code": "          <div className=\"grid md:grid-cols-2 gap-8\">",
       "buggy_code": "          <div className=\"grid grid-cols-1 max-w-xs gap-8\">",
-      "css_selector": ".main-temp-grid",
+      "css_selector": "div[class*='bg-white'][class*='backdrop-blur-xl'][class*='rounded-3xl'] > div.grid.gap-8",
       "bounding_box": {
     "x": 81,
     "y": 257,
@@ -57,7 +60,7 @@
       "line_number": 113,
       "clean_code": "            <div className=\"grid grid-cols-2 gap-4\">",
       "buggy_code": "            <div className=\"grid grid-cols-1 max-w-32 gap-4\">",
-      "css_selector": ".stats-grid",
+      "css_selector": "div.grid.gap-8 > div.grid.gap-4",
       "bounding_box": {
     "x": 81,
     "y": 509,
@@ -73,7 +76,7 @@
       "line_number": 146,
       "clean_code": "          <div className=\"grid grid-cols-2 md:grid-cols-4 gap-3\">",
       "buggy_code": "          <div className=\"grid grid-col-2 flex-col md:grid-cols-4 gap-3 overflow-hidden\">",
-      "css_selector": ".location-tabs",
+      "css_selector": "h3:has-text(\"Your Locations\") + div",
       "bounding_box": {
     "x": 32,
     "y": 1347,
@@ -89,7 +92,7 @@
       "line_number": 165,
       "clean_code": "          <h3 className=\"text-white text-lg font-semibold mb-4\">5-Day Forecast</h3>",
       "buggy_code": "          <h3 className=\"text-white text-lgg text-xs font-semibold mb-4\">5-Day Forecast</h3>",
-      "css_selector": ".forecast-title",
+      "css_selector": "h3:has-text(\"5-Day Forecast\")",
       "bounding_box": {
     "x": 32,
     "y": 1489,
@@ -105,9 +108,9 @@
       "line_number": 169,
       "clean_code": "                <p className=\"font-semibold mb-2\">{item.day}</p>",
       "buggy_code": "                <p className=\"font-semibold mb-2 -mx-32 text-yellow-300 font-black\">► {item.day}</p>",
-      "css_selector": ".forecast-day",
+      "css_selector": "h3:has-text(\"5-Day Forecast\") + div > div:first-child > p.font-semibold.mb-2",
       "bounding_box": {
-    "x": -79,
+    "x": 0,
     "y": 1538,
     "width": 456,
     "height": 24
@@ -121,7 +124,7 @@
       "line_number": 185,
       "clean_code": "          <h3 className=\"text-white text-lg font-semibold mb-4\">Hourly Forecast</h3>",
       "buggy_code": "          <h3 className=\"text-white text-lg font-semibold p-0 m-0 bg-red-500/50\">Hourly Forecast</h3>",
-      "css_selector": ".hourly-title",
+      "css_selector": "h3:has-text(\"Hourly Forecast\")",
       "bounding_box": {
     "x": 32,
     "y": 1726,
@@ -137,7 +140,7 @@
       "line_number": 187,
       "clean_code": "            <div className=\"flex gap-3 pb-2\">",
       "buggy_code": "            <div className=\"flex gap-3 pb-2 text-opacity-0 bg-gray-900\">",
-      "css_selector": ".hourly-container",
+      "css_selector": "div.flex.gap-3.pb-2:has(> div)",
       "bounding_box": {
     "x": 32,
     "y": 1754,
@@ -153,10 +156,10 @@
       "line_number": 204,
       "clean_code": "        <div className=\"mt-12 text-center text-blue-100 text-sm\">",
       "buggy_code": "        <div className=\"mt-12 text-center text-white text-sm bg-white/90 p-4\">",
-      "css_selector": ".footer",
+      "css_selector": "div.mt-12.text-center.text-sm",
       "bounding_box": {
     "x": 32,
-    "y": 1521,
+    "y": 1950,
     "width": 234,
     "height": 174
   }
